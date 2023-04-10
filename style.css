@@ -1,0 +1,190 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* set all paragraphs to sans-serif, font-weight to 500 thickness, size 18px, and color to grey */
+p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #555555;
+}
+
+/* set content width to 800px and center align */
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* add solid border and top and bottom spacing of 1em size */
+.header {
+    border-bottom: 1px rgb(228, 228, 228) solid;
+    padding: 1em 0 1em 0;
+    justify-content: space-between;
+}
+
+/* flex = declare justification, space between justifies the logo, menu text & seach form */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* justify content in header, to space out menu, logo and search form */
+.sub-header {
+    justify-content: space-between;
+}
+
+/* add logo as background image */
+.logo {
+    min-width: 170px;
+    height: 50px;
+    background-image: url(img/logo_eavf.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* font set to sans-serif and color to dark grey */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #014c4f;
+}
+
+/* menu list font set to sans-serif */
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* declare justification on navigation bar */
+.navbar {
+    display: flex;
+}
+
+/* this targets the url links in header and removes decoration and default purple color */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+
+/* change menu links color to gold on mouse over */
+.navbar a:hover {
+    color: rgb(185, 151, 0);
+}
+
+.navbar ul {
+    margin: 10px 0;
+    color: #014c4f;
+}
+
+.hamburger_box {
+    width: 48px;
+    height: 48px;
+    background-color: grey;
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    min-height: 150px;
+    background-color: #014c4f;;
+    position: static;
+    padding: 2em;
+}
+
+.banner {
+    background-color: #014c4f;
+    background-image: url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+button {
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-right: 10px;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s all;
+}
+
+.banner_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe_3-col {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.recipe_col {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipe_info {
+    padding: 1em;
+}
+
+.img_bg {
+    min-width: 250px;
+    height: 280px;
+    background-color: #e1c85f;
+}
+
+.footer_logo {
+    max-width: 170px;
+    height: 50px;
+    background-image: url(img/logo_eavf_white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background-color: #00000050;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.banner_content {
+    z-index: 2;
+}
