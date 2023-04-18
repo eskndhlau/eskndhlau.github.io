@@ -22,10 +22,6 @@ p {
     border-bottom: 1px rgb(228, 228, 228) solid;
     padding: 1em 0 1em 0;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 99;
 }
 
 /* flex = declare justification, space between justifies the logo, menu text & seach form */
@@ -33,7 +29,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px 0 10px;
 }
 
 /* justify content in header, to space out menu, logo and search form */
@@ -43,7 +38,7 @@ p {
 
 /* add logo as background image */
 .logo {
-    width: 170px;
+    min-width: 170px;
     height: 58px;
     background-image: url(img/logo_eavf.png);
     background-size: cover;
@@ -91,10 +86,6 @@ li {
     display: flex;
     align-items: center;
     padding: 15px;
-}
-
-.hamburger_box:hover {
-    cursor: pointer;
 }
 
 .search-form {
@@ -244,42 +235,4 @@ h1, h2, span {
 .footer .nav_container .navbar ul a {
     font-size: 12px;
     color: #fff;
-}
-
-/* Small devices (phones, 750px and down) */
-@media only screen and (max-width: 750px) {
-    h1 {
-        font-size: 30px !important;;
-    }
-    
-    .recipe_3-col {
-    flex-direction: column;
-}
-    
-    .img_bg {
-        height: 200px;
-    }
-}
-
-/* Smaller devices (phones, 500px and down) */
-@media only screen and (max-width: 500px) {
-    .sub-header {
-        display: none;
-    }
-    
-    input#search {
-        display: none !important;
-    }
-    
-    .search-form {
-    width: 40px !important;
-    background: transparent;    
-    }
-    
-    .logo {
-        width: 130px;
-        height: 42px;
-        background-size: cover;
-    }
-    
 }
