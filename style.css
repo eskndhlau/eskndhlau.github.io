@@ -104,6 +104,10 @@ li {
     background-color: #014c4f;;
     position: static;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
@@ -158,17 +162,27 @@ button:hover {
 }
 
 .recipe_info {
-    padding: 1em;
+    padding: 1em 0;
+}
+
+.recipe_info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe_col .img_bg {
+    background-position: center;
+    background-size: cover;
 }
 
 .img_bg {
-    min-width: 250px;
-    height: 280px;
+    min-width: 180px;
+    height: 150px;
     background-color: #e1c85f;
 }
 
 .footer_logo {
-    max-width: 170px;
+    width: 170px;
     height: 58px;
     background-image: url(img/logo_eavf_white.png);
     background-size: cover;
@@ -216,4 +230,9 @@ h1, h2, span {
     background: transparent;
     border: none;
     font-size: 18px;
+}
+
+.footer .nav_container .navbar ul a {
+    font-size: 12px;
+    color: #fff;
 }
