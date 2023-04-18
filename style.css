@@ -28,6 +28,7 @@ p {
 .main-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* justify content in header, to space out menu, logo and search form */
@@ -38,7 +39,7 @@ p {
 /* add logo as background image */
 .logo {
     min-width: 170px;
-    height: 50px;
+    height: 58px;
     background-image: url(img/logo_eavf.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,29 +74,28 @@ li {
 }
 
 .navbar ul {
-    margin: 10px 0;
+    margin: 10px;
     color: #014c4f;
+    padding: 0;
 }
 
 .hamburger_box {
-    width: 48px;
-    height: 48px;
-    background-color: grey;
+    background-color: #e8e8e8;
     border-radius: 25px;
     justify-content: center;
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 
 .search-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
-    color: #fff;
-    border: solid 2px black;
+    background-color: #e8e8e8;
     border-radius: 5px;
     width: 150px;
+    height: 45px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -169,7 +169,7 @@ button:hover {
 
 .footer_logo {
     max-width: 170px;
-    height: 50px;
+    height: 58px;
     background-image: url(img/logo_eavf_white.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -187,4 +187,33 @@ button:hover {
 
 .banner_content {
     z-index: 2;
+}
+
+h1, h2, span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.open_menu {
+    background-image: url(img/hamburger.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.search_icon {
+    background-image: url(img/search_icon.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.search-form input {
+    width: 90px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
 }
