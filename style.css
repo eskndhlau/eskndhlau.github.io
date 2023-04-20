@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.content_body {
+    padding: 0 10px;
+}
+
 /* set all paragraphs to sans-serif, font-weight to 500 thickness, size 18px, and color to grey */
 p {
     font-family: sans-serif;
@@ -64,10 +68,13 @@ li {
 /* declare justification on navigation bar */
 .navbar {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* this targets the url links in header and removes decoration and default purple color */
-.navbar a {
+.navbar li a {
     text-decoration: none;
     color: inherit;
     text-transform: capitalize;
@@ -78,10 +85,11 @@ li {
     color: rgb(185, 151, 0);
 }
 
-.navbar ul {
+.navbar li {
     margin: 10px;
     color: #014c4f;
     padding: 0;
+    text-decoration: none !important;
 }
 
 .hamburger_box {
@@ -91,10 +99,12 @@ li {
     display: flex;
     align-items: center;
     padding: 15px;
+    transition: 0.2s all ease-in-out;
 }
 
 .hamburger_box:hover {
     cursor: pointer;
+    background-color: #e8e8e850;
 }
 
 .search-form {
@@ -110,7 +120,7 @@ li {
 
 .footer {
     min-height: 150px;
-    background-color: #014c4f;;
+    background-color: #014c4f;
     position: static;
     padding: 2em;
     display: flex;
@@ -136,7 +146,7 @@ li {
     font-size: 50px;
 }
 
-button {
+.button {
     padding: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -145,10 +155,12 @@ button {
     margin-right: 10px;
     min-width: 100px;
     max-width: 200px;
+    background-color: #fff;
+    text-align: center;
 }
 
-button:hover {
-    background-color: transparent;
+.button:hover {
+    background-color: #ffffff50;
     border: 2px solid;
     color: #fff;
     cursor: pointer;
@@ -159,6 +171,11 @@ button:hover {
     display: flex;
     flex-direction: row;
 }
+
+.banner_buttons a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 .recipe_3-col {
     display: flex;
@@ -212,7 +229,9 @@ button:hover {
     z-index: 2;
 }
 
-h1, h2, span {
+h1,
+h2,
+span {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -249,13 +268,14 @@ h1, h2, span {
 /* Small devices (phones, 750px and down) */
 @media only screen and (max-width: 750px) {
     h1 {
-        font-size: 30px !important;;
+        font-size: 30px !important;
     }
-    
+
     .recipe_3-col {
-    flex-direction: column;
-}
-    
+        flex-direction: column;
+        padding: 1em;
+    }
+
     .img_bg {
         height: 200px;
     }
@@ -266,20 +286,53 @@ h1, h2, span {
     .sub-header {
         display: none;
     }
-    
+
     input#search {
         display: none !important;
     }
-    
+
     .search-form {
-    width: 40px !important;
-    background: transparent;    
+        width: 40px !important;
+        background: transparent;
     }
-    
+
     .logo {
         width: 130px;
         height: 42px;
         background-size: cover;
     }
-    
+}
+
+.sidemenu {
+    background-color: rgb(238, 238, 238);
+    text-decoration: none;
+    position: fixed;
+    z-index: 999;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.2s all ease-in-out;
+}
+
+.sidemenu a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #555555;
+}
+
+.sidemenu ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 30px;
+    padding: 0 0 10px 0;
+}
+
+.closebtn {
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-weight: bold;
 }
