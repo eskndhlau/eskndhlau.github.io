@@ -1,51 +1,73 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Recipes: Elizabeth’s Vegan Food</title>
-        <!-- Link stylesheet -->       
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Recipes: Elizabeth’s Vegan Food</title>         
+        <!-- Link stylesheet -->         
         <link rel="stylesheet" type="text/css" href="style.css"/> 
-        <!-- Javascript Link -->
-        <script src="js/offcanvas.js"></script>
-        <!--Favicon Link-->
+        <!-- Javascript Link -->         
+        <script src="js/offcanvas.js"></script>         
+        <!--Favicon Link-->         
         <link rel="shortcut icon" href="img/favicon_.png" type="image/x-icon"> 
         <!-- Make the site responsive, automatically scale depending on size of device -->         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </head>
-<!-- Website Header, Content & Footer -->
-    <body>
+    </head>     
+    <!-- Website Header, Content & Footer -->     
+    <body> 
         <div id="mySidemenu" class="sidemenu">
             <!-- Close button Javascript -->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
                 <li>
                     <a href="index.html"><img src="img/logo_eavf.png" alt="logo" width="150"></a>
-                </li>                 <li>
-                    <a href="index.html">home</a>
-                </li>                             
+                </li>                 
                 <li>
-                    <a href="recipes.html">recipes</a>
-                </li>                             
+                    <a href="index.html">Home</a>
+                </li>                 
                 <li>
-                    <a href="about.html">about us</a>
-                </li>                             
+                    <a href="recipes.html">Recipes</a>
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/breakfast.html">Breakfast</a>
+                        </li>
+                    </ul>                     
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/lunchanddinner.html">Lunch & Dinner</a>
+                        </li>
+                    </ul>                     
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/condiments.html">Condiments</a>
+                        </li>
+                    </ul>                     
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/snacksandsalads.html">
+                            Snacks & Salads </a>
+                        </li>
+                    </ul>                     
+                </li>                 
                 <li>
-                    <a href="contact.html">contact us</a>
-                </li>                             
+                    <a href="about.html">About us</a>
+                </li>                 
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>                 
             </ul>
-        </div> 
-        <div class="content">
+        </div>
+        <div class="content"> 
             <!-- Header -->             
             <div class="header"> 
                 <div class="main-header"> 
-                    <!-- onclink opens the menu -->
+                    <!-- onclink opens the menu -->                     
                     <div class="hamburger_menu" onclick="openNav()"> 
                         <div class="hamburger_box"> 
                             <div class="open_menu"></div>                             
                             <span>Menu</span> 
                         </div>                         
                     </div>                     
-                    <a href="index.html"><div class="logo">
-                            <div class="logo_bg"></div>
+                    <a href="index.html"><div class="logo"> 
+                            <div class="logo_bg"></div>                             
                         </div></a> 
                     <div class="search-form"> 
                         <div class="search_icon"></div>                         
@@ -56,103 +78,61 @@
                 <div class="sub-header"> 
                     <nav class="nav_container"> 
                         <ul class="navbar"> 
-                            <li>
-                                <a href="index.html">home</a>
+                            <li> 
+                                <a href="index.html">home</a> 
                             </li>                             
-                            <li>
-                                <a href="recipes.html">recipes</a>
+                            <li> 
+                                <a href="recipes.html">recipes</a> 
                             </li>                             
-                            <li>
-                                <a href="about.html">about us</a>
+                            <li> 
+                                <a href="about.html">about us</a> 
                             </li>                             
-                            <li>
-                                <a href="contact.html">contact us</a>
+                            <li> 
+                                <a href="contact.html">contact us</a> 
                             </li>                             
                         </ul>                         
                     </nav>                     
                 </div>                 
-            <!-- Content -->
-            </div>
-            <div class="content_body">
-            <!-- Hero Image -->
-                <div class="banner">
-                    <h1>Recipes</h1>            
-                </div>
-            <!-- 3 Recipe Columns -->
-                <div class="recipe_3-col">
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recipe_3-col">
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="recipe_3-col">
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                    <div class="recipe_col">
-                        <div class="img_bg"></div>
-                        <div class="recipe_info">
-                            <h3>Recipe Name</h3>
-                            <p>preparation</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer_logo"><div class="logo_bg"></div>
-        </div>
-        </div>      
-    </body>
+                <!-- Content -->                 
+            </div>             
+            <div class="content_body"> 
+                <!-- Hero Image -->                 
+                <div class="banner"> 
+                    <h1>Recipes</h1> 
+                </div>                 
+                <!-- 3 Recipe Columns -->                 
+                <div class="recipe_3-col" id="recipe_section"> 
+                    <div class="recipe_col"> 
+                        <a href="pages/breakfast.html"><div class="img_bg" style="background-image: url(./img/breakfast.png);">p</div></a> 
+                        <div class="recipe_info"> 
+                            <a href="pages/breakfast.html"><h3>Breakfast</h3></a> 
+                        </div>                         
+                    </div>                     
+                    <div class="recipe_col"> 
+                        <a href="pages/lunchanddinner.html"><div class="img_bg" style="background-image: url(./img/Lunch.png);"></div></a> 
+                        <div class="recipe_info"> 
+                            <a href="pages/lunchanddinner.html"><h3>Lunch & Dinner</h3></a> 
+                        </div>                         
+                    </div>                     
+                    <div class="recipe_col"> 
+                        <a href="pages/condiments.html"><div class="img_bg" style="background-image: url(./img/condiments.png);"></div></a> 
+                        <div class="recipe_info"> 
+                            <a href="pages/condiments.html"><h3>Condiments</h3></a> 
+                        </div>                         
+                    </div>                     
+                    <div class="recipe_col"> 
+                        <a href="pages/snacksandsalads.html"><div class="img_bg" style="background-image: url(./img/snacks.jpg);"></div></a> 
+                        <div class="recipe_info"> 
+                            <a href="pages/snacksandsalads.html"><h3>Snacks & Salads</h3></a> 
+                        </div>                         
+                    </div>                     
+                </div>                                                   
+            </div>             
+            <!-- Footer -->             
+            <div class="footer"> 
+                <div class="footer_logo">
+                    <div class="logo_bg"></div>                     
+                </div>                 
+            </div>             
+    </body>     
 </html>

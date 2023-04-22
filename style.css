@@ -139,6 +139,7 @@ li {
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
 }
 
 .banner h1 {
@@ -175,7 +176,7 @@ li {
 .banner_buttons a {
     text-decoration: none;
     color: inherit;
-  }
+}
 
 .recipe_3-col {
     display: flex;

@@ -1,46 +1,103 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Contact: Elizabeth’s Vegan Food</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-<!-- Website Header, Content & Footer -->
-    <body>
-        <div class="content">
-            <!-- Header -->
-        <div class="header">
-            <div class="main-header">
-                <div class="hamburger_menu">
-                    <div class="hamburger_box"><span>Menu</span></div>
-                </div>
-                <div class="logo"><div class="logo_bg"></div></div>     
-                <div class="search-form"><div class="logo_bg">
-                    <img src="" alt=""/>
-                    <span>Search</span>
-                </div></div>     
-            </div>
-            <!-- Subheader -->
-            <div class="sub-header">
-                <div class="nav_container">
-                    <li class="navbar">
-                        <ul><a href="index.html">home</a></ul>
-                        <ul><a href="recipes.html">recipes</a></ul>
-                        <ul><a href="about.html">about us</a></ul>
-                        <ul><a href="contact.html">contact us</a></ul>
-                    </li>
-                </div>
-            </div>
-            <!-- Content -->
-            </div>
-            <div class="content_body">
-            <!-- Hero Image -->
-                <div class="banner">
-                    <h1>Contact Us</h1>
-                </div>
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer_logo"><div class="logo_bg"></div>
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Contact: Elizabeth’s Vegan Food</title>         
+        <link rel="stylesheet" type="text/css" href="style.css"/> 
+    </head>     
+    <!-- Website Header, Content & Footer -->     
+    <body> 
+        <div id="mySidemenu" class="sidemenu">
+            <!-- Close button Javascript -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="img/logo_eavf.png" alt="logo" width="150"></a>
+                </li>                 
+                <li>
+                    <a href="index.html">Home</a>
+                </li>                 
+                <li>
+                    <a href="recipes.html">Recipes</a>
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/breakfast.html">Breakfast</a>
+                        </li>
+                    </ul>                     
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/lunchanddinner.html">Lunch & Dinner</a>
+                        </li>
+                    </ul>                     
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/condiments.html">Condiments</a>
+                        </li>
+                    </ul>                     
+                    <ul class="nested_list">
+                        <li>
+                            <a href="pages/snacksandsalads.html">
+                            Snacks & Salads </a>
+                        </li>
+                    </ul>                     
+                </li>                 
+                <li>
+                    <a href="about.html">About us</a>
+                </li>                 
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>                 
+            </ul>
         </div>
-        </div>      
-    </body>
+        <div class="content"> 
+            <!-- Header -->             
+            <div class="header"> 
+                <div class="main-header"> 
+                    <!-- onclink opens the menu -->
+                    <div class="hamburger_menu" onclick="openNav()"> 
+                        <div class="hamburger_box"> 
+                            <div class="open_menu"></div>                             
+                            <span>Menu</span> 
+                        </div>                         
+                    </div>                     
+                    <a href="index.html"><div class="logo">
+                            <div class="logo_bg"></div>
+                        </div></a> 
+                    <div class="search-form"> 
+                        <div class="search_icon"></div>                         
+                        <input type="search" name="search" id="search" placeholder="search"> 
+                    </div>                     
+                </div>                 
+                <!-- Subheader -->                 
+                <div class="sub-header"> 
+                    <nav class="nav_container"> 
+                        <ul class="navbar"> 
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>                             
+                            <li>
+                                <a href="recipes.html">recipes</a>
+                            </li>                             
+                            <li>
+                                <a href="about.html">about us</a>
+                            </li>                             
+                            <li>
+                                <a href="contact.html">contact us</a>
+                            </li>                             
+                        </ul>                         
+                    </nav>                     
+                </div>                 
+                <!-- Content -->                 
+            </div>             
+            <div class="content_body"> 
+                <!-- Hero Image -->                 
+                <div class="banner"> 
+                    <h1>Contact Us</h1> 
+                </div>                 
+                <!-- Footer -->                 
+                <div class="footer"> 
+                    <div class="footer_logo">
+                        <div class="logo_bg"></div>                         
+                    </div>                     
+                </div>                 
+    </body>     
 </html>
