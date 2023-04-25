@@ -1,14 +1,57 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>Breakfast: Elizabeth’s Vegan Food</title>         
+        <title>Snacks & Salads</title>         
         <link rel="stylesheet" type="text/css" href="../style.css"/> 
-        <link rel="shortcut icon" href="../../img/favicon_.png" type="image/x-icon"> 
+        <link rel="shortcut icon" href="../img/favicon_.png" type="image/x-icon">
+        <script src="../js/offcanvas.js"></script>         
     </head>     
     <!-- Website Header, Content & Footer -->     
     <body> 
         <div class="content"> 
             <!-- Header -->             
+            <div id="mySidemenu" class="sidemenu">
+                <!-- Close button Javascript -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li>
+                        <a href="../index.html"><img src="../img/logo_eavf.png" alt="logo" width="150"></a>
+                    </li>                     
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>                     
+                    <li>
+                        <a href="../recipes.html">Recipes</a>
+                        <ul class="nested_list">
+                            <li>
+                                <a href="breakfast.html">Breakfast</a>
+                            </li>
+                        </ul>                         
+                        <ul class="nested_list">
+                            <li>
+                                <a href="lunchanddinner.html">Lunch & Dinner</a>
+                            </li>
+                        </ul>                         
+                        <ul class="nested_list">
+                            <li>
+                                <a href="condiments.html">Condiments</a>
+                            </li>
+                        </ul>                         
+                        <ul class="nested_list">
+                            <li>
+                                <a href="snacksandsalads.html">
+                            Snacks & Salads </a>
+                            </li>
+                        </ul>                         
+                    </li>                     
+                    <li>
+                        <a href="../about.html">About us</a>
+                    </li>                     
+                    <li>
+                        <a href="../contact.html">Contact us</a>
+                    </li>                     
+                </ul>
+            </div>
             <div class="header"> 
                 <div class="main-header"> 
                     <!-- onclink opens the menu -->
@@ -31,16 +74,16 @@
                     <nav class="nav_container"> 
                         <ul class="navbar"> 
                             <li>
-                                <a href="index.html">home</a>
+                                <a href="../index.html">home</a>
                             </li>                             
                             <li>
-                                <a href="recipes.html">recipes</a>
+                                <a href="../recipes.html">recipes</a>
                             </li>                             
                             <li>
-                                <a href="about.html">about us</a>
+                                <a href="../about.html">about us</a>
                             </li>                             
                             <li>
-                                <a href="contact.html">contact us</a>
+                                <a href="../contact.html">contact us</a>
                             </li>                             
                         </ul>                         
                     </nav>                     
@@ -49,68 +92,60 @@
             </div>             
             <div class="content_body"> 
                 <!-- Hero Image -->                 
-                <div class="banner"> 
+                <div class="banner" style="background-image: url('../img/mixed_fruit_salads.jpg'); background-size: cover; background-position: center center;"> 
                     <!-- Banner Content is a container with a background image and overlay transparent black layer -->                     
                     <div class="banner_content"> 
-                        <h1>Breakfast Recipes</h1> 
+                        <h1>Snacks &amp; Salads</h1> 
                         <!-- Banner Buttons container has a flex property that puts the buttons side by side -->                         
-                        <div class="banner_buttons"> 
-                            <a href="#recipe_section"><button>See Recipes</button></a> 
-                            <a href="about.html"><button>About</button></a> 
-                        </div>                         
                     </div>                     
                     <!-- Overlay layer is a layer above the background image, darkening the image to make text and buttons brighter -->                     
                     <div class="overlay"></div>                     
                 </div>                 
                 <!-- 3 Recipe Columns -->                 
-                <h2>Breakfast Recipes</h2> 
-                <div class="recipe_3-col" id="recipe_section"> 
+                <h2>Lunch &amp; Dinner</h2> 
+                <div class="recipe_3-col" id="recipe_section">
                     <div class="recipe_col"> 
-                        <a href="#"><div class="img_bg" style="background-image: url(../img/breakfast.png);"></div></a> 
+                        <a href="#"><div class="img_bg" style="background-image: url('../img/mixed_fruit_salads.jpg');"></div></a> 
                         <div class="recipe_info"> 
-                            <a href="#"><h3>Breakfast</h3></a> 
+                            <h3><a href="#">M</a>IXED FRUIT SALADS</h3>
+                        </div>
+                    </div>
+                    <div class="recipe_col"> 
+                        <a href="#"><div class="img_bg" style="background-image: url('../img/ROASTED_PEANUTS_PUMPKIN_SEEDS.jpg');"></div></a> 
+                        <div class="recipe_info"> 
+                            <h3><a href="#">ROASTED PEANUTS <br>&amp; PUMPKIN SEEDS</a></h3>
+                        </div>
+                    </div>                     
+                    <div class="recipe_col"> 
+                        <a href=""><div class="img_bg" style="background-image: url('../img/magaka_salad.jpg');"></div></a> 
+                        <div class="recipe_info"> 
+                            <a href=""><h3>MAGAKA SALAD</h3></a> 
                         </div>                         
                     </div>                     
                     <div class="recipe_col"> 
-                        <a href=""><div class="img_bg" style="background-image: url(../img/Lunch.png);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href=""><h3>Lunch & Dinner</h3></a> 
-                        </div>                         
-                    </div>                     
-                    <div class="recipe_col"> 
-                        <a href=""><div class="img_bg" style="background-image: url(../img/condiments.png);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href=""><h3>Condiments</h3></a> 
-                        </div>                         
-                    </div>                     
-                    <div class="recipe_col"> 
-                        <a href=""><div class="img_bg" style="background-image: url(../img/snacks.jpg);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href=""><h3>Snacks & Salads</h3></a> 
-                        </div>                         
-                    </div>                     
+</div>
                 </div>                 
             </div>             
             <!-- Footer -->             
             <div class="footer"> 
-                <a href="../index.html"><div class="footer_logo"></div></a> 
+                <a href="index.html"><div class="footer_logo"></div></a> 
                 <p style="color: #fff; font-size: 12px;">Elizabeth's African Vegan Foods © 2023</p> 
-                <div class="nav_container"> 
-                    <li class="navbar"> 
-                        <ul>
+                <nav class="nav_container"> 
+                    <ul class="navbar"> 
+                        <li>
                             <a href="../index.html">home</a>
-                        </ul>                         
-                        <ul>
-                            <a href="recipes.html">recipes</a>
-                        </ul>                         
-                        <ul>
-                            <a href="about.html">about us</a>
-                        </ul>                         
-                        <ul>
-                            <a href="contact.html">contact us</a>
-                        </ul>                         
-                    </li>                     
-                </div>                 
+                        </li>                         
+                        <li>
+                            <a href="../recipes.html">recipes</a>
+                        </li>                         
+                        <li>
+                            <a href="../about.html">about us</a>
+                        </li>                         
+                        <li>
+                            <a href="../contact.html">contact us</a>
+                        </li>                         
+                    </ul>                     
+                </nav>                 
             </div>             
         </div>         
     </body>     

@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>Breakfast: Elizabeth’s Vegan Food</title>         
+        <title>Sadza with Muboora / Derere / Tsunga</title>         
         <link rel="stylesheet" type="text/css" href="../style.css"/> 
         <link rel="shortcut icon" href="../img/favicon_.png" type="image/x-icon">
         <script src="../js/offcanvas.js"></script>         
@@ -13,16 +13,16 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
                 <li>
-                    <a href="index.html"><img src="../img/logo_eavf.png" alt="logo" width="150"></a>
+                    <a href="../index.html"><img src="../img/logo_eavf.png" alt="logo" width="150"></a>
                 </li>                 
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>                 
                 <li>
-                    <a href="recipes.html">Recipes</a>
+                    <a href="../recipes.html">Recipes</a>
                     <ul class="nested_list">
                         <li>
-                            <a href="pages/breakfast.html">Breakfast</a>
+                            <a href="breakfast.html">Breakfast</a>
                         </li>
                     </ul>                     
                     <ul class="nested_list">
@@ -32,21 +32,21 @@
                     </ul>                     
                     <ul class="nested_list">
                         <li>
-                            <a href="pages/condiments.html">Condiments</a>
+                            <a href="condiments.html">Condiments</a>
                         </li>
                     </ul>                     
                     <ul class="nested_list">
                         <li>
-                            <a href="pages/snacksandsalads.html">
+                            <a href="snacksandsalads.html">
                             Snacks & Salads </a>
                         </li>
                     </ul>                     
                 </li>                 
                 <li>
-                    <a href="about.html">About us</a>
+                    <a href="../about.html">About us</a>
                 </li>                 
                 <li>
-                    <a href="contact.html">Contact us</a>
+                    <a href="../contact.html">Contact us</a>
                 </li>                 
             </ul>
         </div>
@@ -92,47 +92,54 @@
             </div>             
             <div class="content_body"> 
                 <!-- Hero Image -->                 
-                <div class="banner"> 
+                <div class="banner" style="background-image: url('../img/manhuchu.jpg'); background-position: center center;"> 
                     <!-- Banner Content is a container with a background image and overlay transparent black layer -->                     
                     <div class="banner_content"> 
-                        <h1>Breakfast Recipes</h1> 
+                        <h1>MANHUCHU (SAMP AND BEANS)</h1> 
                         <!-- Banner Buttons container has a flex property that puts the buttons side by side -->                         
                     </div>                     
                     <!-- Overlay layer is a layer above the background image, darkening the image to make text and buttons brighter -->                     
                     <div class="overlay"></div>                     
                 </div>                 
                 <!-- 3 Recipe Columns -->                 
-                <h2>Breakfast Recipes</h2> 
-                <div class="recipe_3-col" id="recipe_section"> 
-                    <div class="recipe_col"> 
-                        <a href="tea_chimodho.html"><div class="img_bg" style="background-image: url(../img/breakfast.png);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href="tea_chimodho.html"><h3>TEA &amp; CHIMODHO</h3></a> 
-                        </div>                         
-                    </div>                     
-                    <div class="recipe_col"> 
-                        <a href="nhedzi.html"><div class="img_bg" style="background-image: url(../img/Lunch.png);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href="nhedzi.html"><h3>NHEDZI SOUP</h3></a> 
-                        </div>                         
-                    </div>                     
-                    <div class="recipe_col"> 
-                        <a href=""><div class="img_bg" style="background-image: url(../img/condiments.png);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href=""><h3>NHOPI</h3></a> 
-                        </div>                         
+                <div class="share_print">
+                    <div class="social_icons">
+                        <span>Share  |  </span>
+                        <img src="../img/facebook.png" width="20"/>
+                        <img src="../img/2021%20Twitter%20logo%20-%20blue.png" width="20"/>
+                        <img src="../img/instagram.png" width="20"/>
                     </div>
-                    <div class="recipe_col"> 
-                        <a href="porridge.html"><div class="img_bg" style="background-image: url(../img/porridge.jpg);"></div></a> 
-                        <div class="recipe_info"> 
-                            <a href="porridge.html"><h3>PORRIDGE</h3></a> 
-                        </div>                         
-                    </div>                     
+                    <div onclick="window.print()" class="print_icon">
+                        <span>Print</span>
+                        <img src="../img/printer-xxl.png" width="20"/>
+                    </div>
+                </div>
+                <div>
+                    <h2>Ingridients</h2>
+                    <ul>
+                        <li>200 g dried black-eyed peas</li>
+                        <li>200 g samp</li>
+                        <li>Water, enough to just cover the samp and beans in the pot</li>
+                        <li>2 T Woolworths chicken stock powder</li>
+                        <li>1 T butter or olive oil</li>
+                        <li>Sea salt, to taste</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="../img/manhuchu.jpg" class="rec_img_size">
+                    <h2>Preparation</h2>
+                    <ul>
+                        <li>Soak the beans in water overnight. This is important as it ensures that the beans cook more evenly and don't split or separate from the skin.</li>
+                        <li>Discard the water, rinse the beans and place in a large pot with the samp.</li>
+                        <li>Add the water and chicken stock and simmer for 2 hours or until the samp and beans are both cooked, but not too soft.</li>
+                        <li>Do not stir or it will become excessively starchy, but keep checking to see that the mixture is not sticking to the bottom of the pot and if tthe water begins to run low, add more, but always keep the water level just above the samp and beans.</li>
+                        <li>As soon as the samp and beans are cooked, stir in the butter and season with salt</li>
+                        <li>Serve as a side with braai meat or with a such as lamb casserole or oxtail</li>
+                    </ul>
                 </div>                 
-            </div>             
-            <!-- Footer -->             
+            </div>
             <div class="footer"> 
-                <a href="../index.html"><div class="footer_logo"></div></a> 
+                <a href="index.html"><div class="footer_logo"></div></a> 
                 <p style="color: #fff; font-size: 12px;">Elizabeth's African Vegan Foods © 2023</p> 
                 <nav class="nav_container"> 
                     <ul class="navbar"> 
@@ -151,6 +158,7 @@
                     </ul>                     
                 </nav>                 
             </div>             
+            <!-- Footer -->             
         </div>         
     </body>     
 </html>
