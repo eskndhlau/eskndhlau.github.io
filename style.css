@@ -232,6 +232,10 @@ li {
 
 h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 span {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -264,6 +268,39 @@ span {
 .footer .nav_container .navbar ul a {
     font-size: 12px;
     color: #fff;
+}
+
+.share_print {
+    display: flex;
+    align-items: center;
+}
+
+.social_icons {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social_icons img {
+    margin: 10px;
+}
+
+.rec_img_size {
+    max-width: 280px;
+}
+
+.social_icons:hover {
+    cursor: pointer;
+}
+
+.print_icon {
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 2px #000 solid;
+}
+
+.print_icon:hover {
+    cursor: pointer;
 }
 
 /* Small devices (phones, 750px and down) */
