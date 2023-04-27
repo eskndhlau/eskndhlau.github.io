@@ -2,7 +2,14 @@
 <html> 
     <head> 
         <title>Contact: Elizabeth’s Vegan Food</title>         
+        <!-- Link stylesheet -->         
         <link rel="stylesheet" type="text/css" href="style.css"/> 
+        <!-- Javascript Link -->
+        <script src="js/offcanvas.js"></script>
+        <!--Favicon Link-->
+        <link rel="shortcut icon" href="img/favicon_.png" type="image/x-icon"> 
+        <!-- Make the site responsive, automatically scale depending on size of device -->         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>     
     <!-- Website Header, Content & Footer -->     
     <body> 
@@ -90,14 +97,35 @@
             </div>             
             <div class="content_body"> 
                 <!-- Hero Image -->                 
-                <div class="banner"> 
-                    <h1>Contact Us</h1> 
+                <div class="banner" style="background-image: url('img/telephone.jpg'); background-position: center center;"> 
+                    <!-- Banner Content is a container with a background image and overlay transparent black layer -->                     
+                    <div class="banner_content"> 
+                        <h1>Contact Us</h1> 
+                        <!-- Banner Buttons container has a flex property that puts the buttons side by side -->                         
+                    </div>                     
+                    <!-- Overlay layer is a layer above the background image, darkening the image to make text and buttons brighter -->                     
+                    <div class="overlay"></div>                     
                 </div>                 
                 <!-- Footer -->                 
                 <div class="footer"> 
-                    <div class="footer_logo">
-                        <div class="logo_bg"></div>                         
-                    </div>                     
+                    <a href="index.html"><div class="footer_logo"></div></a> 
+                    <p style="color: #fff; font-size: 12px;">Elizabeth's African Vegan Foods © 2023</p> 
+                    <nav class="nav_container"> 
+                        <ul class="navbar"> 
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>                             
+                            <li>
+                                <a href="recipes.html">recipes</a>
+                            </li>                             
+                            <li>
+                                <a href="about.html">about us</a>
+                            </li>                             
+                            <li>
+                                <a href="contact.html">contact us</a>
+                            </li>                             
+                        </ul>                         
+                    </nav>                     
                 </div>                 
     </body>     
 </html>

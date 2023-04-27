@@ -97,8 +97,14 @@
             </div>             
             <div class="content_body"> 
                 <!-- Hero Image -->                 
-                <div class="banner"> 
-                    <h1>Recipes</h1> 
+                <div class="banner" style="background-image: url('img/nhedzi.jpg'); background-position: center center;"> 
+                    <!-- Banner Content is a container with a background image and overlay transparent black layer -->                     
+                    <div class="banner_content"> 
+                        <h1>Recipes</h1> 
+                        <!-- Banner Buttons container has a flex property that puts the buttons side by side -->                         
+                    </div>                     
+                    <!-- Overlay layer is a layer above the background image, darkening the image to make text and buttons brighter -->                     
+                    <div class="overlay"></div>                     
                 </div>                 
                 <!-- 3 Recipe Columns -->                 
                 <div class="recipe_3-col" id="recipe_section"> 
@@ -121,18 +127,33 @@
                         </div>                         
                     </div>                     
                     <div class="recipe_col"> 
-                        <a href="pages/snacksandsalads.html"><div class="img_bg" style="background-image: url(./img/snacks.jpg);"></div></a> 
+                        <a href="pages/snacksandsalads.html"><div class="img_bg" style="background-image: url('img/magaka_salad.jpg');"></div></a> 
                         <div class="recipe_info"> 
                             <a href="pages/snacksandsalads.html"><h3>Snacks & Salads</h3></a> 
                         </div>                         
                     </div>                     
-                </div>                                                   
+                </div>                 
             </div>             
             <!-- Footer -->             
             <div class="footer"> 
-                <div class="footer_logo">
-                    <div class="logo_bg"></div>                     
-                </div>                 
+                <a href="index.html"><div class="footer_logo"></div></a> 
+                <p style="color: #fff; font-size: 12px;">Elizabeth's African Vegan Foods © 2023</p> 
+                <nav class="nav_container"> 
+                    <ul class="navbar"> 
+                        <li>
+                            <a href="../index.html">home</a>
+                        </li>                         
+                        <li>
+                            <a href="../recipes.html">recipes</a>
+                        </li>                         
+                        <li>
+                            <a href="../about.html">about us</a>
+                        </li>                         
+                        <li>
+                            <a href="../contact.html">contact us</a>
+                        </li>                         
+                    </ul>                     
+                </nav>                 
             </div>             
     </body>     
 </html>
