@@ -48,8 +48,8 @@ p {
 
 /* add logo as background image */
 .logo {
-    width: 170px;
-    height: 58px;
+    width: 175px;
+    height: 55px;
     background-image: url(img/logo_eavf.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ li {
 }
 
 .footer_logo {
-    width: 170px;
+    width: 184px;
     height: 58px;
     background-image: url(img/logo_eavf_white.png);
     background-size: cover;
